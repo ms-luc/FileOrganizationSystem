@@ -1,0 +1,430 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+
+<!--
+
+LANGUAGE ENTRY STRUCTURE:
+
+    <Language>
+      <Projects>
+        <Solitary> </Solitary>
+        <Incorporated> </Incorporated>
+      </Projects>
+      <Tutorials>
+        <Basics>
+          <Source category="" location =""></Source OS = ""> # Windows # Linux # Mixed # Windows (specific) # Linux (specific)
+        </Basics>
+        <Advanced>
+
+        </Advanced>
+      </Tutorials>
+    </Language>
+
+TUTORIAL FILE STRUCTURE:
+
+    <file entry="">
+       <name></name>
+       <location></location>  # default
+       <associated_files location ="no"></associated_files> # none # Attribute: location ="no"
+       <description></description> # none
+       <commented></commented> # no
+       <requires_completion></requires_completion> # yes # no
+       <will_run></will_run> # yes # no
+    </file>
+
+    #TEMPLATE
+    <file entry="">
+       <name></name>
+       <location></location>
+       <associated_files location ="no"></associated_files>
+       <description></description>
+       <commented></commented>
+       <requires_completion></requires_completion>
+       <will_run></will_run>
+    </file>
+
+====================
+
+Major sections(such as a language):
+attribute 'name'
+
+Sub sections(Such as a source or folder):
+attribute 'category'
+
+Elements(such as project folders and sub folders and files):
+attribute 'entry'
+
+
+
+
+-->
+<!-- keep <location> blank if no location -->
+
+<archives>
+
+  <languages>
+
+    <Language name ="Batch">
+      <Projects>
+        <Solitary>
+
+          <Project entry ="Batch Tools">
+            <location></location> <!-- keep blank if no location -->
+          </Project>
+
+          <Project entry ="CCLeaner shortcut">
+            <name>cln.bat</name>
+            <location></location>
+          </Project>
+		  
+		  <Project entry ="Process IP Listener">
+            <name>app_ip.bat</name>
+			<commented>parameters: [-a | /a] ip</commented>
+			<commented>yes</commented>
+            <location>Documents/Projects/Batch/Solitary/Process IP Listener/</location>
+          </Project>
+
+
+        </Solitary>
+
+        <Incorporated>
+
+          <Project entry ="Synonym Tool">
+            <name>synonym</name>
+            <location></location>
+          </Project>
+
+          <Project entry ="Notepad++ Tool">
+            <name>npp</name>
+            <location></location>
+            <description>will open notepad ++</description>
+            <parameters>parameter are new/existing file titles, unlimited amount</parameters>
+          </Project>
+
+        </Incorporated>
+
+      </Projects>
+
+      <Tutorials>
+        <Basics >
+
+          <Source category = "John Hammond @ YouTube" location ="Documents/Workspace/Batch/" OS = "Windows 7">
+
+            <file entry="loops" >
+              <name>loops.bat</name>
+              <location>default</location>
+              <associated_files location ="no">None</associated_files>
+              <description>Everthing about loops in Batch, from while to for loops. Describes delimiters and tokens.</description>
+              <commented>no</commented>
+              <requires_completion>no</requires_completion>
+              <will_run>yes</will_run>
+            </file>
+
+            <file entry = "customization">
+                <name>colors.bat</name>
+                <location>default</location>
+                <associated_files location ="no">None</associated_files>
+                <description>Basic example of prompt customization, all info at 'prompt /?'</description>
+                <commented>no</commented>
+                <requires_completion>no</requires_completion>
+                <will_run>yes</will_run>
+            </file>
+
+            <file entry = "networking">
+              <name>dns.bat</name>
+              <location>default</location>
+              <associated_files location ="no">none</associated_files>
+              <description>Two of the batch networking commands, nslookup and net</description>
+              <commented>no</commented>
+              <requires_completion>no</requires_completion>
+              <will_run>yes</will_run>
+            </file>
+
+            <file entry = "basics">
+              <name>file.bat</name>
+              <location>default</location>
+              <associated_files location ="no">none</associated_files>
+              <description>Very basics of Batch such as variable creation and function creation.</description>
+              <commented>no</commented>
+              <requires_completion>no</requires_completion>
+              <will_run>yes</will_run>
+            </file>
+
+            <file entry="folder manipulation">
+              <name>folders.bat</name>
+              <location>default</location>
+              <associated_files location ="no">none</associated_files>
+              <description>Folder manipulation in Batch</description>
+              <commented>yes</commented>
+              <requires_completion>no</requires_completion>
+              <will_run>yes</will_run>
+            </file>
+
+            <file entry="functions">
+              <name>funct.bat</name>
+              <location>default</location>
+              <associated_files location ="no">none</associated_files>
+              <description>All you need to know about functions and parameters</description>
+              <commented>no</commented>
+              <requires_completion>no</requires_completion>
+              <will_run>yes</will_run>
+            </file>
+
+            <file entry="simple loop">
+              <name>i.bat</name>
+              <location>default</location>
+              <associated_files location ="no">none</associated_files>
+              <description>Simple loop</description>
+              <commented>no</commented>
+              <requires_completion>no</requires_completion>
+              <will_run>yes</will_run>
+            </file>
+
+            <file entry="redirection">
+              <name>redirection.bat</name>
+              <location>default</location>
+              <associated_files location ="no">none</associated_files>
+              <description>All you need to know about redirection in Batch. This includes pipes and redirection symbols > .</description>
+              <commented>no</commented>
+              <requires_completion>no</requires_completion>
+              <will_run>yes</will_run>
+            </file>
+
+            <file entry="strings">
+              <name>strings.bat</name>
+              <location>default</location>
+              <associated_files location ="no">none</associated_files>
+              <description>All you need to know about Strings in Batch.</description>
+              <commented>no</commented>
+              <requires_completion>no</requires_completion>
+              <will_run>yes</will_run>
+            </file>
+
+          </Source>
+
+          <Source category = "Source @ Net" location ="Documents/Workspace/Batch/" OS = "Windows 7">
+
+            <file entry="test_item">
+              <name>strings.bat</name>
+              <location>default</location>
+              <associated_files location ="no">none</associated_files>
+              <description>All you need to know about Strings in Batch.</description>
+              <commented>no</commented>
+              <requires_completion>no</requires_completion>
+              <will_run>yes</will_run>
+            </file>
+
+          </Source>
+
+          <Source category = "Web source @ Net" location ="Documents/Workspace/Batch/" OS = "Windows 7">
+
+            <file entry="test_item">
+              <name>strings.bat</name>
+              <location>default</location>
+              <associated_files location ="no">none</associated_files>
+              <description>All you need to know about Strings in Batch.</description>
+              <commented>no</commented>
+              <requires_completion>no</requires_completion>
+              <will_run>yes</will_run>
+            </file>
+
+          </Source>
+
+
+        </Basics>
+
+
+        <Advanced>
+          <Source category = "John Hammond @ YouTube" location ="Documents/Workspace/Batch/" OS = "Windows 7">
+
+            <file entry="arrays">
+              <name>array.bat</name>
+              <location>default</location>
+              <associated_files location ="no">none</associated_files>
+              <description>Find tutorial on John Hammond's channel</description>
+              <commented>no</commented>
+              <requires_completion>yes</requires_completion>
+              <will_run>yes</will_run>
+            </file>
+
+            <file entry="string function">
+              <name>mkstr.bat</name>
+              <location>default</location>
+              <associated_files location ="no">none</associated_files>
+              <description>A function for making strings using ""</description>
+              <commented>no</commented>
+              <requires_completion>no</requires_completion>
+              <will_run>yes</will_run>
+            </file>
+
+            <file entry="substrings">
+              <name>testString.bat</name>
+              <location>default</location>
+              <associated_files location ="no">none</associated_files>
+              <description>A function for searching substrings</description>
+              <commented>no</commented>
+              <requires_completion>no</requires_completion>
+              <will_run>yes</will_run>
+            </file>
+
+          </Source>
+
+          <Source category = "Someone" location ="Documents/Workspace/Batch/" OS = "Windows 7">
+
+            <file entry="someone_test_item">
+              <name>strings.bat</name>
+              <location>default</location>
+              <associated_files location ="no">none</associated_files>
+              <description>All you need to know about Strings in Batch.</description>
+              <commented>no</commented>
+              <requires_completion>no</requires_completion>
+              <will_run>yes</will_run>
+            </file>
+
+          </Source>
+
+        </Advanced>
+
+
+      </Tutorials>
+    </Language>
+
+    <Language name = "Unity">
+      <Projects>
+        <Solitary> </Solitary>
+        <Incorporated> </Incorporated>
+      </Projects>
+      <Tutorials>
+        <Basics>
+		
+			<Source category = "2D Game Kit @ Unity" location ="Documents/Workspace/Unity/2D Game Kit/" OS = "Windows 7">
+			
+				<file entry="Getting Started">
+				
+				  <name>01 - Game Kit Introdunction.txt</name>
+				  <location>default</location>
+				  <description>An introduction on starting with Game Kits</description>
+
+				</file>
+			
+			</Source>
+		
+		</Basics>
+        <Advanced></Advanced>
+      </Tutorials>
+    </Language>
+	
+    <Language name = "C">
+      <Projects>
+        <Solitary> </Solitary>
+        <Incorporated> </Incorporated>
+      </Projects>
+      <Tutorials>
+        <Basics></Basics>
+        <Advanced></Advanced>
+      </Tutorials>
+    </Language>
+
+    <Language name = "Cpp">
+      <Projects>
+        <Solitary> </Solitary>
+        <Incorporated> </Incorporated>
+      </Projects>
+      <Tutorials>
+        <Basics></Basics>
+        <Advanced></Advanced>
+      </Tutorials>
+    </Language>
+
+    <Language name = "CSharp">
+      <Projects>
+        <Solitary> </Solitary>
+        <Incorporated> </Incorporated>
+      </Projects>
+      <Tutorials>
+        <Basics></Basics>
+        <Advanced></Advanced>
+      </Tutorials>
+    </Language>
+
+    <Language name = "Java">
+      <Projects>
+        <Solitary> </Solitary>
+        <Incorporated> </Incorporated>
+      </Projects>
+      <Tutorials>
+        <Basics></Basics>
+        <Advanced></Advanced>
+      </Tutorials>
+    </Language>
+
+    <Language name = "Python">
+      <Projects>
+        <Solitary>
+
+			<Project entry ="Secret Santa - Gmail">
+				<name>secret_santa_email.py</name>
+				<location>non cloud</location>
+				<non_cloud>C:/Users/Luciant/Desktop/Cloud/Documents/Projects/Python/Solitary/Secret Santa/</non_cloud>
+			</Project>
+
+		</Solitary>
+        <Incorporated> </Incorporated>
+      </Projects>
+      <Tutorials>
+        <Basics></Basics>
+        <Advanced>
+
+          <Source category = "TutorialsPoint" location ="Documents/Workspace/Python/Tutorials/Tutorials Point/" OS = "Windows 7">
+
+              <file entry="Python XML SAX Parser">
+                <name>XMLParse.py</name>
+                <location>C:/Users/Luciant/Desktop/Cloud/Documents/Workspace/Python/Tutorials/Tutorials Point/XML/</location>
+                <associated_files location ="Documents/Workspace/Python/Tutorials/Tutorials Point/XML/">arrivals.xml</associated_files>
+                <description>Parses XML documents using SAX</description>
+                <commented>no</commented>
+                <requires_completion>no</requires_completion>
+                <will_run>yes</will_run>
+              </file>
+
+              <file entry="Python XML DOM Parser">
+                <name>domXML.py</name>
+                <location>non cloud</location>
+                <non_cloud>C:/Users/Luciant/Desktop/Cloud/Documents/Workspace/Python/Tutorials/Tutorials Point/XML/</non_cloud>
+                <associated_files location ="Documents/Workspace/Python/Tutorials/Tutorials Point/XML/">arrivals.xml</associated_files>
+                <description>Parses XML documents using Dom</description>
+                <commented>yes</commented>
+                <requires_completion>no</requires_completion>
+                <will_run>yes</will_run>
+              </file>
+
+          </Source>
+
+        </Advanced>
+      </Tutorials>
+    </Language>
+
+    <Language name = "SQL">
+      <Projects>
+        <Solitary> </Solitary>
+        <Incorporated> </Incorporated>
+      </Projects>
+      <Tutorials>
+        <Basics></Basics>
+        <Advanced></Advanced>
+      </Tutorials>
+    </Language>
+
+    <Language name = "XML">
+      <Projects>
+        <Solitary> </Solitary>
+        <Incorporated> </Incorporated>
+      </Projects>
+      <Tutorials>
+        <Basics></Basics>
+        <Advanced></Advanced>
+      </Tutorials>
+    </Language>
+
+  </languages>
+
+</archives>

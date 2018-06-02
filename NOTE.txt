@@ -1,0 +1,13 @@
+when saving links.
+
+run the java code you have for accessing synonyms
+if it throws an error it means that the page is dynamic
+
+IMPORTANT
+
+	when creating statistics/analytics part
+
+	check not for how often something is created
+	but rather how often a file is modified
+
+	if there are a lot of modifications at once that means it was a UNITY build

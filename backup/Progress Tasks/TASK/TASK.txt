@@ -1,0 +1,7 @@
+Add useful links inside of each Project
+
+make a general Pane class
+
+aka 
+	def menuPane(list):
+		...
