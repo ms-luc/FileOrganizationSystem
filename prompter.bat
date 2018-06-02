@@ -1,3 +1,3 @@
 @echo off 
 
-prompt luciant$G
+prompt ms-luc$G
